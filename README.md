@@ -1,4 +1,4 @@
-# Mortal_Kombat - учебный проект Glo-Academy
+# Mortal Kombat - учебный проект Glo-Academy
 ## Выполни проект - Мельников Артём 
 ### Технологии:
  -HTML
