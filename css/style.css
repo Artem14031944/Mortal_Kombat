@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  overflow:  hidden;
+}
+body {
+  background: #010202;
+  font-family: 'Source Sans Pro', sans-serif
+}
+a {
+  text-decoration: none;
+}
+.header {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: block;
+}
+.user-photo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user-name {
+  color:#fff;
+  font-size: 16px;
+  line-height: 20px;  
+  margin-right: 15px;
+}
+.app {
+  background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 90.9%);
+  min-height: 100vh;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  /* overflow: hidden; */
+}
+.film {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 7% 0%;
+}
+.description {
+  max-width: 460px;
+  font-size: 21px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+  margin-top: 0;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  opacity: 0.4;
+  color: #E5E5E5;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 18px;
+  margin-bottom: 9px;
+  flex-wrap: wrap;
+}
+.tags > * {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.age {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+.button {
+  padding: 11px 26px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+  background: #2F2F2F;
+  cursor: pointer;
+}
+.button_film {
+  background: #EA6E20;
+  margin-right: 15px;
+}
+.button_text{
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.window {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.window__email{
+  width: 270px;
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+.window__email:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.window__close {
+  color: #858585;
+  font-size: 28px;
+  margin-left: auto;
+}
+.window__close:hover,
+.window__close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.window__content {
+  width: 450px;
+  height: 190px;
+  padding: 2px 16px;
+  background-color: #FFFFFF;
+  color: #000;
+  margin: 180px auto;
+  border-radius: 6px;
+}
+.window__header{
+  display: flex;
+}
+.window__body {
+  display: flex;
+  justify-content: left;
+}
+.window__footer{
+  margin-top: 35px;
+}
+.window__button {
+  float: right;
+  width: 140px;
+  height: 37px;
+  padding: 0 0 2px 0;
+  font-size: 15px;
+}
+
+@media(max-width: 1200px) {
+  .img-logo {
+    max-width: 80%;
+  }
+}
+
+@media(max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 400px;
+    background: url(../image/cover-image.jpg) no-repeat bottom center / 300px;
+  }
+  video {
+    display: none;
+  }
+  .film {
+    padding-top: 2%;
+  }
+  .description {
+    font-size: 16px;
+    max-width: 333px;
+  }
+  .film-logo {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 576px) {
+  .button_text {
+    display: none;
+  }
+  .user-name {
+    display: none;
+  }
+  .app {
+    padding-bottom: 370px;
+    background-size: 300px;
+  }
+  .button {
+    margin-bottom: 10px;
+  }
+}

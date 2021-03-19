@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortal Combat - премьера фильма 2021</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+ <video src="./video/video.mp4" id="myVideo" autoplay loop muted></video>
+  <div class="app" id="app">  
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="./image/logo.svg" alt="Логотип: КиноПульс" class="img-logo">
+      </a>
+      <a href="#" class="user">
+        <span class="user-name">Артём</span>
+        <img src="./image/User.jpg" alt="Фотография пользывателя" class="user-photo">
+      </a>
+    </header>
+    <section class="film">
+      <img src="./image/film-logo.png" alt="Mortal Kombat" class="film-logo">
+      <div class="tags">
+        <span class="data">2021</span>
+        <span class="genre">боевик, фэнтези, фантастика</span>
+        <span class="country">США</span>
+        <span class="age">18+</span>
+      </div>
+      <p class="description">
+        Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший
+      </p>
+      <div class="buttons-group">
+        <button class="button button_film" id="button__open">Предзаказ фильма</button>
+        <div class="window" id="window">
+          <div class="window__content">
+            <header class="window__header">
+              <h2 class="window_title">КиноПульс</h2>
+              <span class="window__close" id="window_close">&times;</span>
+            </header>
+            <div class="window__body">
+              <input type="email" name="" id="email" class="window__email" placeholder="Введите ваш email">
+              
+            </div>
+            <div class="window__footer">
+              <button class="window__button button button_film">Подписаться</button>
+            </div>
+            
+          </div>
+        </div>
+        <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button_play">
+          <img src="./image/play.svg" alt="" class="button_icon">
+          <span class="button_text">Смотреть трейлер</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="./js/jquery.vide.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   <script src="./js/main.js"></script> 
+   <script src="./js/window.js"></script>
+</body>
+</html>
